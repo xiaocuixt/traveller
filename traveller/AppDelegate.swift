@@ -16,16 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         //判断是否第一次启动
-        if(!NSUserDefaults.standardUserDefaults().boolForKey("firstLaunch")) {
-            self.window?.rootViewController = ViewController()
-            self.window?.makeKeyAndVisible()
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "firstLaunch")
-        }else{
-            let sb = UIStoryboard(name: "Main", bundle: nil)
-            let mainView = sb.instantiateViewControllerWithIdentifier("main") as! UIViewController
-            self.window?.makeKeyAndVisible()
-            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "firstLaunch")
-        }
+//        if(!NSUserDefaults.standardUserDefaults().boolForKey("firstLaunch")) {
+//            self.window?.rootViewController = ViewController()
+//            self.window?.makeKeyAndVisible()
+//            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "firstLaunch")
+//        }else{
+//            let sb = UIStoryboard(name: "Main", bundle: nil)
+//            let mainView = sb.instantiateViewControllerWithIdentifier("main") as! UIViewController
+//            self.window?.makeKeyAndVisible()
+//            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "firstLaunch")
+//        }
 
         return true
     }

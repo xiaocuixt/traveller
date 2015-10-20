@@ -64,9 +64,9 @@ class WelcomeViewController: UIViewController, UIScrollViewDelegate {
     }
     func buttonClick(button:UIButton)
     {
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        let mainView = sb.instantiateViewControllerWithIdentifier("main") as! UIViewController
-        self.presentViewController(mainView, animated: true, completion: nil)
+        //let sb = UIStoryboard(name: "Main", bundle: nil)
+        //let mainView = sb.instantiateViewControllerWithIdentifier("") as! UIViewController
+        //self.presentViewController(mainView, animated: true, completion: nil)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
