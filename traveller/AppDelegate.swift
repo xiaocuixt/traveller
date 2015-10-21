@@ -26,7 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            self.window?.makeKeyAndVisible()
 //            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "firstLaunch")
 //        }
-
+        //修改tab bar的样式
+        UITabBar.appearance().barTintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
+        UITabBar.appearance().barTintColor = UIColor.clearColor()
+        UITabBar.appearance().tintColor = UIColor(red: 79/225, green: 195/225, blue: 247/225, alpha: 1)
         return true
     }
 
