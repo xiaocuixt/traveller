@@ -16,9 +16,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         //设置找回密码输入框border
-        findPassword.layer.borderColor = UIColor.blackColor().CGColor
-        findPassword.layer.cornerRadius = 8
-        findPassword.layer.backgroundColor = UIColor.redColor().CGColor
+        //findPassword.layer.borderColor = UIColor.blackColor().CGColor
+        //findPassword.layer.cornerRadius = 8
+        //findPassword.layer.backgroundColor = UIColor.redColor().CGColor
         
         
     }
