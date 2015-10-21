@@ -14,10 +14,11 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //设置登录按钮
         //loginButton.backgroundColor = UIColor(red: 129/225, green: 213/225, blue: 250/225, alpha: 1)
         loginButton.setBackgroundImage(UIImage(named: "login-button.png"), forState:.Normal)
         loginButton.layer.cornerRadius = 16
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +26,21 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    //点击return键隐藏键盘
+    @IBAction func AccountTextField(sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    @IBAction func passwordTextField(sender: UITextField) {
+        sender.resignFirstResponder()
+    }
+    
+    //创建两个框的outlet
+    @IBOutlet weak var accountField: UITextField!
+    @IBOutlet weak var passwordField: UITextField!
+    @IBAction func controlTouchDown(sender: UIControl) {
+        accountField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+    }
     /*
     // MARK: - Navigation
 

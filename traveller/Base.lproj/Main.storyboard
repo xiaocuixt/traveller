@@ -663,7 +663,7 @@
                         <viewControllerLayoutGuide type="top" id="yGQ-Ip-m2J"/>
                         <viewControllerLayoutGuide type="bottom" id="gro-30-MDW"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="drJ-h5-IE4">
+                    <view key="view" contentMode="scaleToFill" id="drJ-h5-IE4" customClass="UIControl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -676,7 +676,10 @@
                                     <constraint firstAttribute="height" constant="50" id="2gd-m5-93m"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                <connections>
+                                    <action selector="passwordTextField:" destination="BUE-qY-2FX" eventType="editingDidEndOnExit" id="EhU-1k-V9g"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  手机号码" minimumFontSize="17" background="login-top-form" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7ll-70-5qC">
                                 <rect key="frame" x="16" y="311" width="568" height="50"/>
@@ -684,7 +687,10 @@
                                     <constraint firstAttribute="height" constant="50" id="iad-3r-4G5"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="AccountTextField:" destination="BUE-qY-2FX" eventType="editingDidEndOnExit" id="FRq-d8-fJ4"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i3B-SE-F9C">
                                 <rect key="frame" x="16" y="493" width="568" height="74"/>
@@ -702,6 +708,9 @@
                                 <state key="normal" title="忘记密码 &gt;">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="n7o-sj-bFb" kind="custom" id="z5O-sZ-Eid"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -724,14 +733,64 @@
                             <constraint firstItem="52m-Fx-Cab" firstAttribute="top" secondItem="v3h-Lx-6xx" secondAttribute="bottom" constant="13" id="uEJ-K0-9FY"/>
                             <constraint firstItem="v3h-Lx-6xx" firstAttribute="leading" secondItem="drJ-h5-IE4" secondAttribute="leadingMargin" id="w0C-95-FQd"/>
                         </constraints>
+                        <connections>
+                            <action selector="controlTouchDown:" destination="BUE-qY-2FX" eventType="touchDown" id="q5x-MN-JHO"/>
+                        </connections>
                     </view>
                     <connections>
+                        <outlet property="accountField" destination="7ll-70-5qC" id="kXQ-C0-Zcw"/>
                         <outlet property="loginButton" destination="i3B-SE-F9C" id="t4N-Eq-yQV"/>
+                        <outlet property="passwordField" destination="v3h-Lx-6xx" id="HuX-L5-XcJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zvV-FW-W5i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1149" y="2897"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="amg-v3-6FW">
+            <objects>
+                <viewController id="n7o-sj-bFb" customClass="ViewController" customModule="traveller" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PyP-ij-RbT"/>
+                        <viewControllerLayoutGuide type="bottom" id="0BO-Us-m9h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xS3-iu-gBw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请输入新密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKr-tX-5dj">
+                                <rect key="frame" x="16" y="31" width="102" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="  密码为8位" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hZ1-mN-vax">
+                                <rect key="frame" x="16" y="57" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="请再次输入新密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ww4-fe-lsx">
+                                <rect key="frame" x="16" y="113" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="  密码为8位" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LjX-cV-s6n">
+                                <rect key="frame" x="16" y="139" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="findPassword" destination="hZ1-mN-vax" id="H4x-1K-F7S"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U8K-dl-I5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1915" y="2914"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pM6-NL-cgQ">
