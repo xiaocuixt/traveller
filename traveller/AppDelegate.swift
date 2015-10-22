@@ -29,7 +29,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //修改tab bar的样式
         UITabBar.appearance().barTintColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
         UITabBar.appearance().barTintColor = UIColor.clearColor()
-        UITabBar.appearance().tintColor = UIColor(red: 79/225, green: 195/225, blue: 247/225, alpha: 1)
+        UITabBar.appearance().tintColor = UIColor(red: 79/255, green: 195/255, blue: 247/255, alpha: 1)
+        
+        //导航栏背景颜色
+        UINavigationBar.appearance().barTintColor = UIColor(red: 3/255, green: 169/255, blue: 244/255, alpha: 1)
+        UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
         return true
     }
 
