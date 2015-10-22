@@ -15,7 +15,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //设置登录按钮
-        //loginButton.backgroundColor = UIColor(red: 129/225, green: 213/225, blue: 250/225, alpha: 1)
+        //loginButton.backgroundColor = UIColor(red: 129/255, green: 213/255, blue: 250/255, alpha: 1)
         loginButton.setBackgroundImage(UIImage(named: "login-button.png"), forState:.Normal)
         loginButton.layer.cornerRadius = 16
         

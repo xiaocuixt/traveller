@@ -21,11 +21,11 @@ class UserViewController: UIViewController {
         userAvatar.clipsToBounds = true
         
         //设置复制按钮样式
-        copyButton.backgroundColor = UIColor(red: 3/225, green: 169/225, blue: 244/225, alpha: 1)
+        copyButton.backgroundColor = UIColor(red: 3/255, green: 169/255, blue: 244/255, alpha: 1)
         copyButton.layer.cornerRadius = 16
         
         //设置投诉按钮样式
-        complainButton.backgroundColor = UIColor(red: 3/225, green: 169/225, blue: 244/225, alpha: 1)
+        complainButton.backgroundColor = UIColor(red: 3/255, green: 169/255, blue: 244/255, alpha: 1)
         complainButton.layer.cornerRadius = 20
         
         

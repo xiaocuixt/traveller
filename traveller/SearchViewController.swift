@@ -18,32 +18,20 @@ class SearchViewController: UIViewController {
 
         destinationTextField.layer.cornerRadius = 5
         destinationTextField.layer.borderWidth = 1
-        destinationTextField.layer.borderColor = UIColor(red: 204/225, green: 204/225, blue: 204/225, alpha: 1).CGColor
+        destinationTextField.layer.borderColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1).CGColor
         
         planeTextField.layer.cornerRadius = 5
         planeTextField.layer.borderWidth = 1
-        planeTextField.layer.borderColor = UIColor(red: 204/225, green: 204/225, blue: 204/225, alpha: 1).CGColor
+        planeTextField.layer.borderColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1).CGColor
         
         railwayTextField.layer.cornerRadius = 5
         railwayTextField.layer.borderWidth = 1
-        railwayTextField.layer.borderColor = UIColor(red: 204/225, green: 204/225, blue: 204/225, alpha: 1).CGColor
+        railwayTextField.layer.borderColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1).CGColor
         
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
