@@ -20,6 +20,7 @@
 		1B6B191B1BD7634200B1C361 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B191A1BD7634200B1C361 /* SearchViewController.swift */; };
 		1B6B191D1BD7747900B1C361 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6B191C1BD7747900B1C361 /* UserViewController.swift */; };
 		1BE98AD41BD684C400C7581F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE98AD31BD684C400C7581F /* LoginViewController.swift */; };
+		1BF03A141BD9D5E80033059D /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BF03A131BD9D5E80033059D /* FindViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		1B6B191A1BD7634200B1C361 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1B6B191C1BD7747900B1C361 /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		1BE98AD31BD684C400C7581F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1BF03A131BD9D5E80033059D /* FindViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				1B6B191C1BD7747900B1C361 /* UserViewController.swift */,
 				1BE98AD31BD684C400C7581F /* LoginViewController.swift */,
 				1B6328FA1BD9386B0068EE57 /* ListViewController.swift */,
+				1BF03A131BD9D5E80033059D /* FindViewController.swift */,
 				1B6B191A1BD7634200B1C361 /* SearchViewController.swift */,
 				1B4193B71BD6246D00E368F9 /* WelcomeViewController.swift */,
 				1B41939B1BD621DD00E368F9 /* Main.storyboard */,
@@ -238,6 +241,7 @@
 				1B6328F91BD9381D0068EE57 /* UserModel.swift in Sources */,
 				1B6B191D1BD7747900B1C361 /* UserViewController.swift in Sources */,
 				1BE98AD41BD684C400C7581F /* LoginViewController.swift in Sources */,
+				1BF03A141BD9D5E80033059D /* FindViewController.swift in Sources */,
 				1B6328FB1BD9386B0068EE57 /* ListViewController.swift in Sources */,
 				1B4193B81BD6246D00E368F9 /* WelcomeViewController.swift in Sources */,
 				1B41939A1BD621DD00E368F9 /* ViewController.swift in Sources */,
