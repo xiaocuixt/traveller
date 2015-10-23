@@ -13,6 +13,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var destinationTextField: UITextField!  //目的地搜索框
     @IBOutlet weak var planeTextField: UITextField!        //航班搜索框
     @IBOutlet weak var railwayTextField: UITextField!      //火车搜索框
+    @IBOutlet weak var searchButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +28,9 @@ class SearchViewController: UIViewController {
         railwayTextField.layer.cornerRadius = 5
         railwayTextField.layer.borderWidth = 1
         railwayTextField.layer.borderColor = UIColor(red: 204/255, green: 204/255, blue: 204/255, alpha: 1).CGColor
+        
+        searchButton.backgroundColor = UIColor(red: 79/255, green: 195/255, blue: 247/255, alpha: 1)
+        searchButton.layer.cornerRadius = 20
         
     }
 
