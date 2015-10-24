@@ -12,7 +12,6 @@ import UIKit
 var users: [UserModel] = []
 
 class ListViewController: UIViewController, UITableViewDataSource {
-    
     @IBOutlet weak var tableView: UITableView!
     //数字颜色
     @IBOutlet weak var totalNumber: UILabel!
@@ -52,7 +51,7 @@ class ListViewController: UIViewController, UITableViewDataSource {
         var userProfession = cell.viewWithTag(1003) as! UILabel
         userProfession.text = user.profession
         var userAgeSolar = cell.viewWithTag(1004) as! UILabel
-        userAgeSolar.text = user.age
+        userAgeSolar.text = user.age + user.solar
         var userSex = cell.viewWithTag(1005) as! UIButton
         userSex.setImage(UIImage(named: user.sex), forState:.Normal)
         var userFav = cell.viewWithTag(1006) as! UIButton
